@@ -203,9 +203,9 @@ def call_deepseek_api(prompt, api_key, model_type):
             api_url,
             headers=headers,
             json=payload,
-            timeout=300  # 增加超时设置
+            timeout=300
         )
-        # 添加响应状态检查
+
         if response.status_code != 200:
             return {
                 "error": f"API request failed, status:{response.status_code}",
