@@ -244,7 +244,6 @@ def main(stock_id, api_key, model_type):
 
     # print("Stock Data:\n", stock_data)
     # print("\nNews Summaries:\n", news_text)
-
     # Bulid prompt
     prompt = construct_prompt(stock_id, stock_data, news_text)
     # Calling the API
